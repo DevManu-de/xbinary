@@ -7,6 +7,10 @@
 #define rotl(x, y) ((x << y) | (x >> (sizeof(x) * 8 - y)))
 #define rotr(x, y) ((x >> y) | (x << (sizeof(x) * 8 - y)))
 
+#ifdef _MATH_H
+#define HIGHESTBIT(x)   ((powl(2, sizeof(x) * 8) - 1) / 2 + 1)
+#endif
+
 #define __to_bin__(x)   __uint128_t __x__ = x;                                      \
                         char __arr__[sizeof(x) * 9] = {'\0'};                       \
                         int16_t __i__;                                              \

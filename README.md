@@ -19,6 +19,10 @@ All you have to do now is to copy `include/xbinary.h` and `libxbinary.a` to your
 > 2. Argument is the amount the number should be shifted right
 >
 
+## HIGHESTBIT()
+> 1. Argument is the data type of which the highest bit should be given (unsigned)
+>
+
 ## print_bin()
 > 1. Argument is the number to be printed as binary to stdout
 >

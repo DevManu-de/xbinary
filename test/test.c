@@ -1,3 +1,4 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,6 +24,15 @@ int main() {
     fprint_bin(stderr, (short) 7878);
     double k = 12.331;
     fprint_bin(stdout, *(unsigned long long*) &k);
+
+    unsigned char c = HIGHESTBIT(char);
+    if (c != 128) {
+        failed();
+    }
+
+    if((unsigned char) HIGHESTBIT(char) != 128) {
+        failed();
+    }
 
     puts("Checks passed");
 
